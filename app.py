@@ -18,7 +18,7 @@ def julio():
         left,rigth = st.columns(2)
         with left:
            st.header("Estadisticas")
-           st.write("Pene: 13 cm ")
+           st.write("cabello: 13 cm ")
            st.write("Altura: 1.73m ")
            st.write("Cumpleaños: Es un misterio")
            st.write("Apodo: Anturipenes ")
