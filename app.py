@@ -53,10 +53,10 @@ def render_profile(nombre_titulo, bio, stats, img_url):
         st.markdown(f"**Estado:** Activo 🟢")
 
     with col2:
-        st.subheader("📜 Biografía")
+        
         st.write(bio)
         
-        st.subheader("📊 Ficha Técnica")
+        
         c1, c2 = st.columns(2)
         with c1:
             st.markdown(f"<div class='stat-card'><b>📛 Nombre:</b><br>{stats['Nombre']}</div>", unsafe_allow_html=True)
@@ -70,8 +70,8 @@ def render_profile(nombre_titulo, bio, stats, img_url):
 # 4. Funciones de cada Página
 def page_julio():
     bio = "Julio es el fundador y una joven promesa de la programación. Empezó a los 5 años y, aunque la calvicie llegó temprano, su capacidad de procesamiento es legendaria."
-    stats = {"Nombre": "Julio Cesar Anturiano", "Altura": "1.73m", "Apodo": "Anturipenes", "Cumpleaños": "Misterio", "Especialidad": "Calvicie Precoz", "Skill": "Horas cívicas"}
-    render_profile("Julio Cesar (El Fundador)", bio, stats, "julioF.jpeg")
+    stats = {"Nombre": "Julio Cesar Anturiano", "Altura": "1.73m", "Apodo": "Espantaviejas", "Cumpleaños": "Misterio", "Especialidad": "Calvicie Precoz", "Skill": "Horas cívicas"}
+    render_profile("Julio Cesar (El primer calvo)", bio, stats, "julioF.jpeg")
     
     # Galería exclusiva de Julio
     st.divider()
@@ -130,13 +130,13 @@ with st.sidebar:
     st.markdown("<h2 style='text-align: center; color: #ff4b4b;'>💀 THE PAPUS</h2>", unsafe_allow_html=True)
     st.divider()
     selection = st.radio("Integrantes:", 
-        ["Anturipenes", "Quilla", "Salva", "Roba Abuelas", "Ratateo", "Buzz Put", "El kakas", "El Prota", "Cuca"])
+        ["Anturianos", "Quilla", "Salva", "Roba Abuelas", "Ratateo", "Buzz Put", "El kakas", "El Prota", "Cuca"])
     st.divider()
     st.info("The Papus Official © 2026")
 
 # 6. Lógica de Enrutamiento
 pages = {
-    "Anturipenes": page_julio,
+    "Anturianos": page_julio,
     "Quilla": page_quilla,
     "Salva": page_salva,
     "Roba Abuelas": page_roba,
